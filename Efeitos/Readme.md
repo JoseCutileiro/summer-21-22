@@ -6,6 +6,6 @@ Objetivos: Aprender html, css e jscript usando exemplos que vejo da net e os meu
 ------------------------------------------------------------------------------------------
 Isometric effect
   > Uma mini lista
-  > Testes com hover 
-  > Apenas css e html
+  > ,Testes com hover 
+  > ,Apenas css e html
 ------------------------------------------------------------------------------------------
