@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Music Player V0.1</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <img = src="media/image.jpg" class="logo">
+                <ul>
+                    <li><a href="#">Github</a></li>
+                    <li><a href="#">Youtube</a></li>
+                    <li><a href="#">Multiclicker</a></li>
+                    <li><a href="#">Isometric</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <div class="left-col">
+                    <h1>SOUND HERE</h1>
+                </div>
+                <div class="right-col">
+                    <p>Click here to listen</p>
+                    <img src="media/play.png" id="icon">
+                </div>
+                <audio id="mySong">
+                    <source src="media/sound.mp3" type="audio/mp3">
+                </audio>
+
+                <script>
+                    var mySong = document.getElementById("mySong");
+                    var icon = document.getElementById("icon");
+                    icon.onclick = function() {
+                        if (mySong.paused){
+                            mySong.play();
+                            icon.src = "media/pause.png";
+                            icon.src.width = "30%";
+                        }else{
+                            mySong.pause();
+                            icon.src = "media/play.png";
+                            icon.src.width = "100%";
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+    </body>
+</html>
